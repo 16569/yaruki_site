@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>やる気が消えた</title>
+    <script>
+        function redirectToAppStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/jp/app/やる気が消えた/id6502950836";
+            }
+            // Android
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.yarukikieta.motivation";
+            }
+            // Other devices (optional)
+            else {
+                window.location.href = "https://apps.apple.com/jp/app/やる気が消えた/id6502950836";
+            }
+        }
+
+        window.onload = redirectToAppStore;
+    </script>
+</head>
+<body>
+    <p>Redirecting to the store page...</p>
+</body>
+</html>
