@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.encourasnail.mukuapp",
+      "sha256_cert_fingerprints":
+        ["44:AD:6A:2C:43:EC:DC:23:BA:E5:23:3A:B5:7D:44:B5:4C:61:78:9D:BE:EF:57:9F:AF:49:93:86:D4:DF:FF:01"]
+    }
+  }
+]
