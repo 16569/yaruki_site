@@ -3,12 +3,10 @@
         "apps": [],
         "details": [
             {
-
-
                 "appIDs": [ "7666XCWDRZ.com.mukuapp.encourasnail" ], 
                 "components": [ 
                     { 
-                        "/": "/*", 
+                        "/": "/encourasnail/*", 
                         "exclude": true,
                         "comment": "Matches any URL beginning with /path/1/ and instructs the system not to open it as a universal link" 
                     }
