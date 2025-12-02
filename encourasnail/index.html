@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>励ましマイマイ</title>
+    <title>マイマイの手紙</title>
     <script>
         function redirectToAppStore() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -23,10 +23,20 @@
         }
 
         window.onload = redirectToAppStore;
+
+        var scheme = "encourasnail://detail?"+location.search;
+        function onLoad() {
+            var a = document.getElementById("spare");
+            a.setAttribute('href', scheme);
+        }
     </script>
 </head>
 <body>
     <p>ストアページに遷移します...</p>
     <p>Redirecting to the store page...</p>
+
+    <div>
+        <h5>タイムレターを受け取る → <a id="spare" href="encourasnail://detail?">アプリを開く</a></h5>
+    </div>
 </body>
 </html>
