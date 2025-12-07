@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイマイの手紙</title>
+    <script>
+        function redirectToAppStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // // iOS
+            // if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            //     window.location.href = "https://apps.apple.com/jp/app/%E3%82%84%E3%82%8B%E6%B0%97%E3%81%8C%E6%B6%88%E3%81%88%E3%81%9F/id6502950836";
+            // }
+            // // Android
+            // else if (/android/i.test(userAgent)) {
+            //     window.location.href = "https://play.google.com/store/apps/details?id=com.yarukikieta.motivation";
+            // }
+            // // Other devices (optional)
+            // else {
+            //     window.location.href = "https://apps.apple.com/jp/app/%E3%82%84%E3%82%8B%E6%B0%97%E3%81%8C%E6%B6%88%E3%81%88%E3%81%9F/id6502950836";
+            // }
+        }
+
+        window.onload = redirectToAppStore;
+
+        var scheme = "encourasnail://detail?"+location.search;
+        function onLoad() {
+            var a = document.getElementById("spare");
+            a.setAttribute('href', scheme);
+        }
+    </script>
+</head>
+<body>
+    <p>下記のリンクからタイムレターを受け取ってください</p>
+    <p>Please receive the Time Letter via the link below</p>
+
+    <div>
+        <h5>タイムレターを受け取る → <a id="spare" href="encourasnail://detail?">アプリを開く</a></h5>
+    </div>
+</body>
+</html>

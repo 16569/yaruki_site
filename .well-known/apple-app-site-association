@@ -5,7 +5,7 @@
                 "appIDs": [ "7666XCWDRZ.com.mukuapp.encourasnail" ], 
                 "components": [ 
                     { 
-                        "/": "/encourasnail/*"
+                        "/": "/encourasnail/timeletter/*"
                     }
                     
                 ]
