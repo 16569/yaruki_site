@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイマイの手紙（リダイレクト中）</title>
+    <script>
+        function redirectToAppStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/us/app/encoura-snail-tiny-calm/id6744582665";
+            }
+            // Android
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.mukuapp.encourasnail";
+            }
+            // Other devices (optional)
+            else {
+                window.location.href = "https://apps.apple.com/us/app/encoura-snail-tiny-calm/id6744582665";
+            }
+        }
+
+        window.onload = redirectToAppStore;
+
+    </script>
 </head>
 <body>
-    
+    <p>このページはアプリストアページに自動でリダイレクトされます</p>
+    <p>This page will automatically redirect you to the app store page.</p>
 </body>
 </html>
